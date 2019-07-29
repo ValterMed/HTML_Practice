@@ -1,0 +1,192 @@
+body {
+  background-color: #f3f5fe; }
+
+.notification_container {
+  background-color: #f3f5fe;
+  height: 800px; }
+
+.notification_container p.note {
+  color: #6c7686;
+  font-size: 16px;
+  margin-left: 14px;
+  padding-top: 20px; }
+  @media screen and (min-width: 376px) {
+    .notification_container p.note {
+      font-size: 30px; } }
+
+.notification_container p.note_title {
+  font-size: 24px;
+  width: 220px;
+  margin-left: 14px;
+  margin-top: -10px;
+  padding-bottom: 10px; }
+  @media screen and (min-width: 376px) {
+    .notification_container p.note_title {
+      font-size: 45px;
+      width: 1200px; } }
+
+.info {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 12px;
+  height: 600px;
+  margin-bottom: -40px; }
+
+.date {
+  color: #6c7686;
+  font-size: 14px;
+  margin-left: 18px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  float: left; }
+  @media screen and (min-width: 376px) {
+    .date {
+      font-size: 23px;
+      margin-left: 38px; } }
+
+.mark_icon_container {
+  float: left; }
+  @media screen and (min-width: 376px) {
+    .mark_icon_container {
+      margin-left: 350px;
+      padding-top: 14px; } }
+
+.mark {
+  color: #080809;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-left: 112px;
+  background-color: #f3f5fe;
+  width: 140px;
+  padding: 12px;
+  float: left; }
+  @media screen and (min-width: 376px) {
+    .mark {
+      font-size: 22px;
+      width: 220px; } }
+
+.mark:hover {
+  padding: 12px;
+  background-color: #b9c3f0; }
+
+.icon:hover {
+  padding: 10px;
+  background-color: #b9c3f0; }
+
+.icon {
+  float: left;
+  width: 12px;
+  padding: 10px;
+  background-color: #f3f5fe;
+  border-radius: 5px;
+  float: left; }
+  @media screen and (min-width: 376px) {
+    .icon {
+      width: 20px;
+      height: 31px; } }
+
+@media screen and (min-width: 376px) {
+  .fa.fa-bookmark-o {
+    font-size: 24px; } }
+.text {
+  color: #6c7686;
+  font-size: 14px;
+  margin-left: 18px;
+  width: 280px;
+  line-height: 25px;
+  clear: left; }
+  @media screen and (min-width: 376px) {
+    .text {
+      width: 1060px;
+      font-size: 22px;
+      line-height: 40px;
+      margin-left: 40px; } }
+
+.marked_word {
+  color: #0027f3;
+  font-size: 12px;
+  background-color: #f3f5fe; }
+  .marked_word.ActionText {
+    border-radius: 15px;
+    position: absolute;
+    top: 490px;
+    left: 40px;
+    padding: 10px;
+    width: 80px;
+    text-align: center; }
+    @media screen and (min-width: 376px) {
+      .marked_word.ActionText {
+        border-radius: 20px;
+        top: 445px;
+        left: 65px;
+        padding: 10px;
+        width: 135px;
+        font-size: 22px; } }
+  .marked_word.Rails {
+    border-radius: 15px;
+    position: absolute;
+    top: 490px;
+    left: 145px;
+    padding: 10px;
+    width: 54px;
+    text-align: center; }
+    @media screen and (min-width: 376px) {
+      .marked_word.Rails {
+        border-radius: 20px;
+        top: 445px;
+        left: 230px;
+        padding: 10px;
+        width: 95px;
+        font-size: 22px; } }
+  .marked_word.Notifications {
+    border-radius: 15px;
+    position: absolute;
+    top: 535px;
+    left: 40px;
+    padding: 10px;
+    width: 93px;
+    text-align: center; }
+    @media screen and (min-width: 376px) {
+      .marked_word.Notifications {
+        border-radius: 20px;
+        top: 445px;
+        left: 355px;
+        padding: 10px;
+        width: 165px;
+        font-size: 22px; } }
+
+.footer {
+  background-color: white;
+  margin-left: 35px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #cccfd2;
+  width: 288px;
+  position: absolute;
+  left: 10px;
+  top: 630px; }
+  @media screen and (min-width: 376px) {
+    .footer {
+      top: 540px;
+      left: 30px;
+      width: 1060px; } }
+  .footer p {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 10px; }
+    @media screen and (min-width: 376px) {
+      .footer p {
+        font-size: 45px; } }
+  .footer ul {
+    color: #6c5ce7;
+    font-size: 16px;
+    padding-left: 34px;
+    margin-top: 0px; }
+    @media screen and (min-width: 376px) {
+      .footer ul {
+        font-size: 22px;
+        width: 500px;
+        padding-left: 54px; } }
+
+/*# sourceMappingURL=stylesheetcss.css.map */

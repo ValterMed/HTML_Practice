@@ -1,0 +1,230 @@
+@import 'mobile_size';
+$letter_color: #6c7686;
+$custom_black: #080809;
+$custom_blue: #0027f3;
+
+@mixin letter_configuration($letter_color, $letter_size) {
+  color: $letter_color;
+  font-size: $letter_size;
+}
+
+body{
+  background-color: #f3f5fe;
+}
+
+.notification_container {
+  background-color: #f3f5fe;
+  height: 800px;
+}
+
+.notification_container p.note {
+  @include letter_configuration($letter_color, 16px);
+  margin-left: 14px;
+  padding-top: 20px;
+
+  @media screen and (min-width: $mobile_screen) {
+    font-size: 30px;
+  }
+}
+
+.notification_container p.note_title {
+  font-size: 24px;
+  width: 220px;
+  margin-left: 14px;
+  margin-top: -10px;
+  padding-bottom: 10px;
+
+  @media screen and (min-width: $mobile_screen) {
+    font-size: 45px;
+    width: 1200px;
+  }
+} 
+
+.info {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 12px;
+  height: 600px;
+  margin-bottom: -40px;
+}
+
+.date {
+  @include letter_configuration($letter_color, 14px);
+  margin-left: 18px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  float: left;
+
+  @media screen and (min-width: $mobile_screen) {
+    font-size: 23px;
+    margin-left: 38px;
+  }
+}
+
+.mark_icon_container {
+  float: left;
+
+  @media screen and (min-width: $mobile_screen) {
+    margin-left: 350px;
+    padding-top: 14px;
+  }
+}
+
+.mark {
+  @include letter_configuration($custom_black, 12px);
+  border-radius: 5px;
+  margin-left: 112px;
+  background-color: #f3f5fe;
+  width: 140px;
+  padding: 12px;
+  float: left;
+
+  @media screen and (min-width: $mobile_screen) {
+    font-size: 22px;
+    width: 220px;
+  }
+}
+
+.mark:hover {
+  padding: 12px;
+  background-color: #b9c3f0;
+}
+.icon:hover {
+  padding: 10px;
+  background-color: #b9c3f0;
+}
+
+.icon {
+  float: left;
+  width: 12px;
+  padding: 10px;
+  background-color: #f3f5fe;
+  border-radius: 5px;
+  float: left;
+
+  @media screen and (min-width: $mobile_screen) {
+    width: 20px;
+    height: 31px;
+  }
+}
+
+@media screen and (min-width: $mobile_screen) {
+  .fa {
+    &.fa-bookmark-o {
+      font-size: 24px;
+    }
+  }
+}
+
+.text {
+  @include letter_configuration($letter_color, 14px);
+  margin-left: 18px;
+  width: 280px;
+  line-height: 25px;
+  clear: left;
+
+  @media screen and (min-width: $mobile_screen) {
+    width: 1060px;
+    font-size: 22px;
+    line-height: 40px;
+    margin-left: 40px;
+  }
+}
+
+.marked_word {
+  @include letter_configuration($custom_blue, 12px);
+  background-color: #f3f5fe;
+  &.ActionText {
+    border-radius: 15px;
+    position: absolute;
+    top: 490px;
+    left: 40px;
+    padding: 10px;
+    width: 80px;
+    text-align: center;
+
+    @media screen and (min-width: $mobile_screen) {
+      border-radius: 20px;
+      top: 445px;
+      left: 65px;
+      padding: 10px;
+      width: 135px;
+      font-size: 22px;
+    }
+  }
+  &.Rails {
+    border-radius: 15px;
+    position: absolute;
+    top: 490px;
+    left: 145px;
+    padding: 10px;
+    width: 54px;
+    text-align: center;
+
+    @media screen and (min-width: $mobile_screen) {
+      border-radius: 20px;
+      top: 445px;
+      left: 230px;
+      padding: 10px;
+      width: 95px;
+      font-size: 22px;
+    }
+  }
+  &.Notifications {
+    border-radius: 15px;
+    position: absolute;
+    top: 535px;
+    left: 40px;
+    padding: 10px;
+    width: 93px;
+    text-align: center;
+
+    @media screen and (min-width: $mobile_screen) {
+      border-radius: 20px;
+      top: 445px;
+      left: 355px;
+      padding: 10px;
+      width: 165px;
+      font-size: 22px;
+    }
+  }
+}
+
+.footer {
+  background-color: white;
+  margin-left: 35px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #cccfd2;
+  width: 288px;
+  position: absolute;
+  left: 10px;
+  top: 630px;
+
+  @media screen and (min-width: $mobile_screen) {
+    top: 540px;    
+    left: 30px;
+    width: 1060px;
+  }
+  p {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: $mobile_screen) {
+    font-size: 45px;
+    }
+  }
+  ul {
+    @include letter_configuration(#6c5ce7, 16px);
+    padding-left: 34px;
+    margin-top: 0px;
+
+    @media screen and (min-width: $mobile_screen) {
+    font-size: 22px;
+    width: 500px;
+    padding-left: 54px;
+    }
+  }
+}
